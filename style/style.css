@@ -1,0 +1,29 @@
+nav {
+  display: grid;
+  grid-template-areas:
+  "logo search search search search search search search search search"
+  ". all news maps videos shopping more . settings tools";
+  align-items: center;
+  justify-items: center;
+}
+.logo {
+  grid-area: logo;
+}
+.search-cont {
+  grid-area: search;
+  display: grid;
+  grid-template-areas:
+  "search-in searchx mic submit";
+}
+.search-in {
+  grid-area: search-in;
+}
+.searchx {
+  grid-area: searchx;
+}
+.mic {
+  grid-area: mic;
+}
+.submit {
+  grid-area: submit;
+}

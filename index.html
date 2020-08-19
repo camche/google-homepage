@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html>
     <Head>
-      <meta><link rel="stylesheet" href="style.css"></meta>
+      <meta><link rel="stylesheet" href="style/style.css"></meta>
     </Head>
     <body>
       <header>
-        <div class="row">About</div>
-        <div class="row">Store</div>
-        <div class="row">Gmail</div>
-        <div class="row">Images</div>
-        <div class="row">9-square</div>
-        <div class="row">Profile</div>
+        <!--Nav bar
+        css grid: 10 columns, 2 rows
+          row 1
+            google logo / search
+            Search is an other css grid
+              input text, x , microphone, submit button remasked
+          row 2
+            ./all/news/,aps/videos/shopping / ...more / . /settings/tools-->
+        <nav>
+          <div><img class="logo" src="images/google-logo1.png" alt="Google's logo"></div>
+          <div class="search-cont">
+            <div class="search-in"><input type="text"></div>
+            <div class="searchx">X</div>
+            <div class="mic"><img src="images/gmic.png"></div>
+            <div class="submit"><input type="submit"></div>
+          </div>          
+          <div>all</div>
+          <div>news</div>
+          <div>maps</div>
+          <div>videos</div>
+          <div>shopping</div>
+          <div>More</div>
+          <div>Settings</div>
+          <div>tools</div>
+        </nav>
       </header>
-      <p> search and image will go here</p>
-      <p> search and image will go here hi there</p>
       <footer>
-        <div>Advertising</div>
-        <div>Business</div>
-        <div>How Search works</div>
-        <div>Privacy</div>
-        <div>Terms</div>
-        <div>Settings</div>
+       <!--Foot is that grey zone down there.
+      One line entry
+    second line will be a css grid, 4 columns.-->
       </footer>
+
+
+
+
+
+
+
+
+
+
+
+
     </body>
 </html>
