@@ -1,17 +1,29 @@
-nav {
+body {
   display: grid;
   grid-template-areas:
-  "logo search search search search search search search search search . launcher profile"
-  ". all news maps videos shopping more . settings tools . . .";
-  align-items: center;
-  justify-items: center;
+  "left-header center-header right-header"
+  "left-main center-main right-main"
+  "left-footer center-footer right-footer";
+  border: 1px black;
 }
+
+/*top left header*/
 .logo {
-  grid-area: logo;
+  grid-area: left-header;
+  width: 200px;
+}
+
+/*top top center header*/
+.center-header {
+  display: grid;
+  grid-area: center-header;
+  grid-template-areas: 
+  "search-cont"
+  "search-options";
 }
 .search-cont {
-  grid-area: search;
   display: grid;
+  grid-area: search-cont;
   grid-template-areas:
   "search-in searchx mic submit";
 }
@@ -26,15 +38,12 @@ nav {
 }
 .submit {
   grid-area: submit;
-}
-.launcher {
-  grid-area: launcher;
-}
-.profile {
-  grid-area: profile;
-}
-.profilepic {
-  border-radius: 50%;
+
+/*top bottom center header*/
+.search-options {
+  display: grid;
+  grid-template-areas:
+  "all news maps videos shopping more . settings tools"
 }
 .all {
   grid-area: all;
@@ -60,3 +69,100 @@ nav {
 .tools {
   grid-area: tools;
 }
+
+/*top right header*/
+.right-header {
+  grid-area: right-header;
+  display: grid;
+  grid-template-areas:
+  ". launcher profile"
+}
+.launcher {
+  grid-area: launcher;
+}
+.profile {
+  grid-area: profile;
+}
+.profilepic {
+  border-radius: 50%;
+}
+
+/*left main*/
+.left-main {
+  grid-area: left-main;
+  width: 200;
+}
+
+/*center main*/
+.center-main {
+width: 600px;
+display: grid;
+grid-area: center-main;
+grid-template-areas:
+"sr1"
+"sr2"
+"vblock"
+"sr3"
+"sr4"
+"ppl-ask"
+"sr5"
+"iblock"
+"sr6"
+"sr7"
+"sr8"
+"sr9"
+"s-related"
+"g1-10"
+}
+.sr1 {
+  grid-area: sr1;
+}
+.sr2 {
+  grid-area: sr2;
+}
+.vblock {
+  grid-area: vblock;
+}
+.sr3 {
+  grid-area: sr3;
+}
+.sr4 {
+  grid-area: sr4;
+}
+.ppl-ask {
+  grid-area: ppl-ask;
+}
+.sr5 {
+  grid-area: sr5
+}
+.iblock {
+  grid-area: iblock;
+}
+.sr6 {
+  grid-area: sr6;
+}
+.sr7 {
+  grid-area: sr7;
+}
+.sr8 {
+  grid-area: sr8;
+}
+.sr9 {
+  grid-area: sr0;
+}
+.s-related {
+  grid-area: s-related;
+}
+.g1-10 {
+  grid-area: g1-10;
+}
+
+/*right main*/
+.right-main {
+  grid-area: right-main;
+  width: auto;
+}
+/*left footer*/
+/*center footer*/
+/*right footer*/
+
