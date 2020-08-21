@@ -1,8 +1,8 @@
 nav {
   display: grid;
   grid-template-areas:
-  "logo search search search search search search search search search"
-  ". all news maps videos shopping more . settings tools";
+  "logo search search search search search search search search search . launcher profile"
+  ". all news maps videos shopping more . settings tools . . .";
   align-items: center;
   justify-items: center;
 }
@@ -26,4 +26,37 @@ nav {
 }
 .submit {
   grid-area: submit;
+}
+.launcher {
+  grid-area: launcher;
+}
+.profile {
+  grid-area: profile;
+}
+.profilepic {
+  border-radius: 50%;
+}
+.all {
+  grid-area: all;
+}
+.news {
+  grid-area: news;
+}
+.maps {
+  grid-area: maps;
+}
+.videos {
+  grid-area: videos;
+}
+.shopping {
+  grid-area: shopping;
+}
+.more {
+  grid-area: more;
+}
+.settings {
+  grid-area: settings;
+}
+.tools {
+  grid-area: tools;
 }
