@@ -1,4 +1,4 @@
-body {
+.top-level {
   display: grid;
   grid-template-areas:
   "left-header center-header right-header"
@@ -8,12 +8,15 @@ body {
 }
 
 /*top left header*/
-.logo {
+.left-header {
   grid-area: left-header;
-  width: 200px;
+  height: 69px;
 }
-
-/*top top center header*/
+#logo {
+  width: 92px;
+  height: 30px;
+}
+/*center header*/
 .center-header {
   display: grid;
   grid-area: center-header;
@@ -21,11 +24,13 @@ body {
   "search-cont"
   "search-options";
 }
+/*top top center header*/
 .search-cont {
   display: grid;
   grid-area: search-cont;
   grid-template-areas:
   "search-in searchx mic submit";
+  height: 69px;
 }
 .search-in {
   grid-area: search-in;
@@ -38,12 +43,13 @@ body {
 }
 .submit {
   grid-area: submit;
-
+}
 /*top bottom center header*/
 .search-options {
   display: grid;
+  grid-area: search-options;
   grid-template-areas:
-  "all news maps videos shopping more . settings tools"
+  "all news maps videos shopping more . settings tools";
 }
 .all {
   grid-area: all;
@@ -75,10 +81,12 @@ body {
   grid-area: right-header;
   display: grid;
   grid-template-areas:
-  ". launcher profile"
+  ". launcher profile";
 }
 .launcher {
   grid-area: launcher;
+}
+.launcher-icon {
 }
 .profile {
   grid-area: profile;
@@ -90,12 +98,11 @@ body {
 /*left main*/
 .left-main {
   grid-area: left-main;
-  width: 200;
+  
 }
 
 /*center main*/
 .center-main {
-width: 600px;
 display: grid;
 grid-area: center-main;
 grid-template-areas:
@@ -112,7 +119,8 @@ grid-template-areas:
 "sr8"
 "sr9"
 "s-related"
-"g1-10"
+"g1-10";
+height: auto;
 }
 .sr1 {
   grid-area: sr1;
@@ -133,7 +141,7 @@ grid-template-areas:
   grid-area: ppl-ask;
 }
 .sr5 {
-  grid-area: sr5
+  grid-area: sr5;
 }
 .iblock {
   grid-area: iblock;
@@ -148,7 +156,7 @@ grid-template-areas:
   grid-area: sr8;
 }
 .sr9 {
-  grid-area: sr0;
+  grid-area: sr9;
 }
 .s-related {
   grid-area: s-related;
@@ -163,6 +171,9 @@ grid-template-areas:
   width: auto;
 }
 /*left footer*/
+.left-footer {
+  
+}
 /*center footer*/
 /*right footer*/
 
