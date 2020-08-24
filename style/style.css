@@ -4,7 +4,6 @@
   "left-header center-header right-header"
   "left-main center-main right-main"
   "left-footer center-footer right-footer";
-  border: 1px black;
 }
 
 /*top left header*/
@@ -98,7 +97,6 @@
 /*left main*/
 .left-main {
   grid-area: left-main;
-  
 }
 
 /*center main*/
@@ -172,7 +170,6 @@ height: auto;
 }
 /*left footer*/
 .left-footer {
-  
 }
 /*center footer*/
 /*right footer*/
