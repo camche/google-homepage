@@ -1,19 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .top-level {
   display: grid;
   grid-template-areas:
+  /*
   "left-header center-header right-header"
+  */
   "left-main center-main right-main"
   "left-footer center-footer right-footer";
 }
 
 /*top left header*/
-.left-header {
+/*.left-header {
   grid-area: left-header;
   height: 69px;
 }
+*/
 #logo {
+  position: absolute;
   width: 92px;
   height: 30px;
+  padding: 20px 28px 0 16px;
+  top: 8px;
 }
 /*center header*/
 .center-header {
@@ -25,14 +35,29 @@
 }
 /*top top center header*/
 .search-cont {
-  display: grid;
+  display: flex;
+  /*
   grid-area: search-cont;
   grid-template-areas:
   "search-in searchx mic submit";
+  */
   height: 69px;
+  flex-direction: row;
 }
 .search-in {
   grid-area: search-in;
+  border-radius: 25px;
+  width: 692px;
+  height: 46px;
+  border: 1px solid #dfe1e5;
+  left: 100px;
+  top: 150px;
+  margin:0 0 0 50px;
+  padding: 0;
+}
+.search-in:hover {
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  border-color: rgba(223,225,229,0);
 }
 .searchx {
   grid-area: searchx;
